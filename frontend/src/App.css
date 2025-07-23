@@ -1,0 +1,45 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding-top: 64px; /* Header 높이만큼 여백 */
+}
+
+/* 반응형 설계 */
+@media (max-width: 768px) {
+  main {
+    padding-top: 56px; /* 모바일에서 Header 높이 */
+  }
+}
+
+/* 로딩 애니메이션 */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+/* 에러 메시지 스타일 */
+.error-message {
+  color: #d32f2f;
+  text-align: center;
+  padding: 20px;
+  background-color: #ffebee;
+  border-radius: 4px;
+  margin: 16px 0;
+}
+
+/* 성공 메시지 스타일 */
+.success-message {
+  color: #2e7d32;
+  text-align: center;
+  padding: 20px;
+  background-color: #e8f5e8;
+  border-radius: 4px;
+  margin: 16px 0;
+}
